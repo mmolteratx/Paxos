@@ -15,11 +15,6 @@ public class AtomicFloat extends Number {
         bits = new AtomicInteger(floatToIntBits(initialValue));
     }
 
-    public final boolean compareAndSet(float expect, float update) {
-        return bits.compareAndSet(floatToIntBits(expect),
-                                  floatToIntBits(update));
-    }
-
     public final void set(float newValue) {
         bits.set(floatToIntBits(newValue));
     }
@@ -34,11 +29,6 @@ public class AtomicFloat extends Number {
 
     public final float getAndSet(float newValue) {
         return intBitsToFloat(bits.getAndSet(floatToIntBits(newValue)));
-    }
-
-    public final boolean weakCompareAndSet(float expect, float update) {
-        return bits.weakCompareAndSet(floatToIntBits(expect),
-                                      floatToIntBits(update));
     }
 
     public double doubleValue() { return (double) floatValue(); }

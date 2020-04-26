@@ -48,11 +48,6 @@ public class DistributedAgreement
             System.exit(-1);
         }
         Server host = getSelf(serverId,peers);
-        if(host == null)
-        {
-            logger.error("Uanble to get self host");
-            System.exit(-1);
-        }
 
         // Spawn off a thread to handle messages from client
         ServerThread serverThread = new ServerThread(host.getWeight(), host.getServerId());

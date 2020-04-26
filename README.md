@@ -1,4 +1,4 @@
-# Distributed Agreement - Project for Distributed Systems at UT Austin Fall 2019
+# Distributed Agreement 
 ## Javier Palomares and Matt Molter
 
 ### Running Server

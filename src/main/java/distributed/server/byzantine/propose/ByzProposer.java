@@ -131,7 +131,7 @@ public class ByzProposer extends Proposer
          * TODO: If the request timed out, the input to this message is null, so neither accepts or rejects will update.
          * Does this cause issues?
          */
-        logger.debug("Response from acceptor " + response);
+        logger.debug("Response from acceptor " + response + ".");
         if(response != null)
         {
             String[] tokens = response.split("\\s+");

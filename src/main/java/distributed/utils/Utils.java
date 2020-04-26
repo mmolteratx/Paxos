@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Utils
 {
     // Set the timeout when sending tcp messages
-    private static int TIMEOUT_MILLIS = 3000;
+    private static int TIMEOUT_MILLIS = 1000;
 
     private static Logger logger = Logger.getLogger(Utils.class);
 
@@ -110,11 +110,6 @@ public class Utils
     public static int getQuorumSize(int numServers,int numFaulty)
     {
         return numServers/2 + numFaulty + 1;
-    }
-
-    public static double getQuorumWeight(double faultyWeight)
-    {
-        return 1.0 - faultyWeight;
     }
 
     public static int getAnchorSize(List<Server> servers, double p)
