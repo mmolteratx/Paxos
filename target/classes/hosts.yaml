@@ -1,0 +1,16 @@
+---
+ipAddress: "127.0.0.1"
+port: 8080
+serverId: 1
+weight : .6
+---
+ipAddress: "127.0.0.1"
+port: 8081
+serverId : 2
+weight : .2
+---
+ipAddress: "127.0.0.1"
+port: 8082
+serverId : 3
+weight : .2
+
